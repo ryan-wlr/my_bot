@@ -9,5 +9,5 @@
     <arg name="recording" value="false"/>
     <arg name="debug" value="false"/>
   </include>
-  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-file $(find myrobot2)/urdf/my_urdf2.urdf -urdf -z 1 -model physics" /> 
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-file $(find myrobot5)/urdf/my_urdf.urdf -urdf -z 1 -model physics" /> 
 </launch>
