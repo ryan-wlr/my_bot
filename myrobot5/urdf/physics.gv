@@ -1,0 +1,20 @@
+digraph G {
+node [shape=box];
+"box" [label="box"];
+"arm_1" [label="arm_1"];
+"arm_2" [label="arm_2"];
+"arm_3" [label="arm_3"];
+"arm_4" [label="arm_4"];
+"tail" [label="tail"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"box" -> "base_to_arm" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"base_to_arm" -> "arm_1"
+"box" -> "base_to_arm2" [label="xyz: 0 0 -0.1 \nrpy: 0.1 -0 3"]
+"base_to_arm2" -> "arm_2"
+"box" -> "base_to_arm3" [label="xyz: 0 -0.5 0 \nrpy: 0 -0 1.5"]
+"base_to_arm3" -> "arm_3"
+"box" -> "base_to_arm4" [label="xyz: 0 0.5 0 \nrpy: 0 0 -1.5"]
+"base_to_arm4" -> "arm_4"
+"box" -> "base_to_tail" [label="xyz: 0 -1 0 \nrpy: 0 -0 0"]
+"base_to_tail" -> "tail"
+}
