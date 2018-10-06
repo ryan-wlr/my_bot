@@ -1,0 +1,10 @@
+controller_list:
+  - name: fake_my_group_controller
+    joints:
+      - base_to_arm
+      - base_to_arm2
+      - base_to_arm3
+      - base_to_arm4
+  - name: fake_gripper_tool_controller
+    joints:
+      []
